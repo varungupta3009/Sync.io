@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sync.io</title>
+	</head>
+
+	<body onclick="sync.startSync(event)">
+		<h1>Sync.io</h1>
+		<h2>Create a music party on the go!</h2>
+		<br>
+		<br>
+		<button id="button" onclick="sync.startSync(event)">Start/Stop</button>
+		<p id="alert"></p>
+		<br>
+		<br>
+		<h2>Time to Sync</h2>
+		<h1 id="time">10</h1>
+		<audio id="beep" src="beep.wav" onended="sync.sound"></audio>
+		<audio id="song" src="sample.mp3"></audio>
+	</body>
+	<script src="js/index.js"></script>
+
+</html>
